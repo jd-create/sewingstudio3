@@ -9,14 +9,14 @@ import java.util.Set;
 
 public interface AccountService {
 
-    public abstract String createUser(Account account);
-    public abstract void updateUser(String username, Account account);
-    public abstract void deleteUser(String username);
-    public abstract Collection<Account> getUsers();
-    public abstract Optional<Account> getUser(String username);
-    public abstract boolean userExists(String username);
-    public abstract Set<Authority> getAuthorities(String username);
-    public abstract void addAuthority(String username, String authority);
-    public abstract void removeAuthority(String username, String authority);
+    String createUser(Account account);
+    void updateUser(String username, Account account);
+    void deleteUser(String username);
+    Collection<Account> getUsers();
+    Optional<Account> getUser(String username);
+    boolean userExists(String username);
+    Set<Authority> getAuthorities(String username);
+    void addAuthority(String username, String authority);
+    void removeAuthority(String username, String authority);
 
 }
