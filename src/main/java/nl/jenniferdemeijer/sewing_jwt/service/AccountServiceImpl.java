@@ -19,9 +19,6 @@ public class AccountServiceImpl implements AccountService {
     @Autowired
     private AccountRepository accountRepository;
 
-//    @Autowired
-//    private AuthorityRepository authorityRepository;
-
     @Override
     public Collection<Account> getUsers() {
         return accountRepository.findAll();

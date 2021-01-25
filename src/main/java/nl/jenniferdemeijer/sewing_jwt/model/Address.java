@@ -6,7 +6,8 @@ import javax.persistence.*;
 @Table(name = "address")
 public class Address {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(nullable = true, unique = true)
     private String addressid;
 
     @Column(name = "street")
