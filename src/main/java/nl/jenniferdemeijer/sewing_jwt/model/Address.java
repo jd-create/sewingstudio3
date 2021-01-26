@@ -18,6 +18,9 @@ public class Address {
     @Column(name = "city")
     private String city;
 
+    @OneToOne(fetch = FetchType.LAZY, orphanRemoval = true)
+    private Account account;
+
     public String getAddressid() {
         return addressid;
     }
